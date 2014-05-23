@@ -52,7 +52,7 @@ namespace MicrOrm.PostgreSql.Test
       {
         var result = db.ExecuteScalar("SELECT test.get_user_id(:p0)", "Bob");
 
-        Assert.True(result > 0);
+        Assert.True((int)result > 0);
       }
     }
 

@@ -52,13 +52,6 @@
     <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Devart.Data, Version=5.0.284.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdParty\dotConnect\Devart.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Devart.Data.PostgreSql">
-      <HintPath>..\ThirdParty\dotConnect\PostgreSQL\Devart.Data.PostgreSql.dll</HintPath>
-    </Reference>
     <Reference Include="Moq">
       <HintPath>..\packages\Moq.4.2.1402.2112\lib\net40\Moq.dll</HintPath>
     </Reference>

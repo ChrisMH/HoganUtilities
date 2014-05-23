@@ -1,11 +1,11 @@
 ﻿namespace Utility.Database
 {
-  public interface IDbManager
-  {
-    void Create();
-    void Destroy();
-    void Seed();
+    public interface IDbManager
+    {
+        void Create();
+        void Destroy();
+        void Seed();
 
-    IDbDescription Description { get; set; }
-  }
+        IDbDescription Description { get; set; }
+    }
 }

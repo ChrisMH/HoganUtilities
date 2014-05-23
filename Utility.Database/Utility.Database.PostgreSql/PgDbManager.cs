@@ -62,7 +62,8 @@ namespace Utility.Database.PostgreSql
                         {
                             if (schemaDefinition.ScriptType == ScriptType.File || schemaDefinition.ScriptType == ScriptType.Resource)
                             {
-                                throw new Exception(string.Format("Create: Error creating from {0} script '{1}': {2}", schemaDefinition.ScriptType, schemaDefinition.ScriptValue, ex.Message), ex);
+                                throw new Exception(
+                                    string.Format("Create: Error creating from {0} script '{1}': {2}", schemaDefinition.ScriptType, schemaDefinition.ScriptValue, ex.Message), ex);
                             }
                             throw new Exception(string.Format("Create: Error creating from {0} script : {1}", schemaDefinition.ScriptType, ex.Message), ex);
                         }
@@ -160,7 +161,8 @@ namespace Utility.Database.PostgreSql
                         {
                             if (seedDefinition.ScriptType == ScriptType.File || seedDefinition.ScriptType == ScriptType.Resource)
                             {
-                                throw new Exception(string.Format("Seed: Error seeding from {0} script '{1}': {2}", seedDefinition.ScriptType, seedDefinition.ScriptValue, ex.Message), ex);
+                                throw new Exception(
+                                    string.Format("Seed: Error seeding from {0} script '{1}': {2}", seedDefinition.ScriptType, seedDefinition.ScriptValue, ex.Message), ex);
                             }
                             throw new Exception(string.Format("Seed: Error seeding from {0} script : {1}", seedDefinition.ScriptType, ex.Message), ex);
                         }
