@@ -1,0 +1,36 @@
+﻿<Window x:Class="TcpClientBuddy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Closing="WindowClosing" Loaded="WindowLoaded">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="150"/>
+      <ColumnDefinition Width="150"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="auto"/>
+      <RowDefinition Height="auto"/>
+      <RowDefinition Height="auto"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+      <Label Content="Address:"></Label>
+      <TextBox Text="{Binding ServerAddress}"></TextBox>
+    </StackPanel>
+
+    <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+      <Label Content="Port:"></Label>
+      <TextBox Text="{Binding ServerPort}"></TextBox>
+    </StackPanel>
+
+    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+      <Button IsEnabled="{Binding StartEnabled}" Click="StartClick">Start</Button>
+      <Button IsEnabled="{Binding StopEnabled}" Click="StopClick">Stop</Button>
+    </StackPanel>
+
+    <TextBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding SendData}"></TextBox>
+    <Button Grid.Row="2" Grid.Column="3" HorizontalAlignment="Left" IsEnabled="{Binding SendEnabled}" Click="SendClick">Send</Button>
+  </Grid>
+</Window>

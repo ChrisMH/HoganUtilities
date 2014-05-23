@@ -1,0 +1,8 @@
+obj/
+bin/
+build/
+*.csproj.user
+*.suo
+*.ReSharper.user
+*.DotSettings.user
+*.dotCover
